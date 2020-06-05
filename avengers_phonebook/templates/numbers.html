@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if current_user.is_authenticated %}
+<h3>Hello {{ current_user.username }}</h3>
+<p> Here are your contacts</p>
+{% for num in nums %}
+<div class="container">
+    <h5>
+        {{ num.phone_numb }}
+    </h5>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock content %}

@@ -20,6 +20,12 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ url_for('phonenumber') }}">Numbers</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('phone_update',user_id=current_user.id) }}">Update Number</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('numbers',user_id=current_user.id) }}">Numbers</a>
+</li>
       </ul>
     </div>
   </nav>
